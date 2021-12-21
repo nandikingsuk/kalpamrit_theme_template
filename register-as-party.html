@@ -132,13 +132,190 @@
 <div class="container d-flex justify-content-center">
     <div class="card m-4 shadow mb-5 bg-body rounded" style="width: 18rem;">
         <div class="card-body">
-          <h6 class="card-title text-center">Register with Kalpamrit</h6>
-          <a href="/register-as-member.html" class="btn btn-primary m-2" style="width: 15rem;">Register as member</a>
-          <a href="/register-as-party.html" class="btn btn-primary m-2" style="width: 15rem;">Register as party</a>
-          <a href="/register-as-guest-user.html" class="btn btn-primary m-2" style="width: 15rem;">Register as guest user</a>
+          <h6 class="card-title text-center">Register as party</h6>
+          <div class="input justify-content-center">
+            <select class="form-select m-2" style="width: 15rem;" id="inputGroupSelect04" aria-label="Example">
+              <option selected>*Party type</option>
+              <option value="1">KSP</option>
+              <option value="2">Franchise</option>
+              <option value="3">Wellness point</option>
+              <option value="3">Wellness center</option>
+              <option value="3">Depo</option>
+            </select>
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*Business name" aria-label="Business name" aria-describedby="basic-addon1">
+            <select class="form-select m-2" style="width: 15rem;" id="inputGroupSelect04" aria-label="Example">
+              <option selected>*Initial</option>
+              <option value="1">Mr.</option>
+              <option value="2">Mrs.</option>
+              <option value="3">Miss.</option>
+              <option value="3">M/s.</option>
+            </select>
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*Owner Name" aria-label="Name" aria-describedby="basic-addon1">
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*Member ID" aria-label="Name" aria-describedby="basic-addon1">
+            <div class="input-group m-2" style="width: 15rem;">
+                <span class="input-group-text" id="basic-addon1">+91</span>
+                <input type="text" class="form-control" placeholder="*Mobile" aria-label="Mobile" aria-describedby="basic-addon1">
+            </div>
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1">
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*Password" aria-label="Password" aria-describedby="basic-addon1">
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*PIN code" aria-label="PIN code" aria-describedby="basic-addon1">
+            <fieldset disabled>
+                  <input type="text" id="disabledTextInput" class="form-control m-2" style="width: 15rem;" placeholder="*State">
+                  <input type="text" id="disabledTextInput" class="form-control m-2" style="width: 15rem;" placeholder="*District">
+            </fieldset>
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*Address" aria-label="Address" aria-describedby="basic-addon1">
+            <P class="m-2">Upload PAN</P>
+            <input class="form-control form-control-sm m-2" style="width: 15rem;" id="formFileSm" type="file">
+            <P class="m-2">Upload AADHAR*</P>
+            <input class="form-control form-control-sm m-2" style="width: 15rem;" id="formFileSm" type="file">
+            <P class="m-2">Upload GSTIN</P>
+            <input class="form-control form-control-sm m-2" style="width: 15rem;" id="formFileSm" type="file">
+            <P class="m-2">* marked fields are mandatory</P>
+            <div class="form-check m-2" style="width: 15rem;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckDefault">
+                    I am authorising Kalpamrit and its associates to send alerts and notifications via email & SMS.
+                </label>
+              </div>
+              <div class="form-check m-2" style="width: 15rem;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    I am Accepting <button type="button" class="btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#membertermsconditions">Terms &amp; conditons</button> for Kalpamrit business.
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <strong class="me-auto">Terms &amp; conditons</strong>
+                            <small>11 mins ago</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Hello, world! This is a toast message.
+                          </div>
+                        </div>
+                      </div>
+                </label>
+              </div>
+          </div>
+          <a href="#" class="btn btn-primary m-2" style="width: 15rem;">Register as party</a>
         </div>
     </div>
 </div>
+  <!-- terms and conditon trigger start -->
+  <div class="modal fade" id="membertermsconditions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Terms &amp; Conditions</h5>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <!-- <div class="modal-dialog modal-dialog-scrollable">
+          ...
+        </div> -->
+        <div class="modal-body">
+          <p>`These Terms and Condition forms an integral part of Kalpamrit Marketing Private Limited. (&ldquo;KMPL or &ldquo;Company&rdquo;) Agreement and are binding, any violation of these, can lead to disciplinary action, including but not limited to termination of KSP, FRANCHISE, DEPOT and SUPER DEPOT:</p>
+          <ol>
+            <li>ELIGIBILITY REQUIREMENTS &amp; CONDITION OF APPOINTMENT:</li>
+          </ol>
+          <p>1.1 Product Purchase: An KMPL Distributor can apply to operate an KSP, FRANCHISE, DEPOT, SUPER DEPOT of KMPL with the minimum purchase of KMPL Products worth Rs.10,000, Rs.1,50,000, Rs.10,00,000 and Rs.30,00,000 respectively.</p>
+          <p>1.2 Infrastructure Requirement: An Outlet operator can operate the Outlet from anywhere, be it his/her home or office. Although the Outlet should be located at a convenient and easy accessible location and must have all the statutory compliances and registration needed to be operated as an Outlet including but not limited to license under FSS Act, Shop &amp; Establishment Act, Municipal trade license etc.</p>
+          <p>1.2.1 Outlet should be fully equipped with amenities like a computer, printer and an internet connection as per specification of KMPL to ensure that the business and operation of Outlet are performed in unhampered manner.</p>
+          <p>1.2.2 Proper upkeep neatness, cleanness of the Outlet and employees working in it is important for the reputation of KMPL and the Outlet must ensure the same. Outlet and its staff members will have to dress smartly &amp; should wear the dress as described/ required by the company.</p>
+          <p>1.2.3 Outlet should have a notice board prominently displaying all offers that are running, important notices and information provided by Company from time to time.</p>
+          <p>1.2.4 Outlet Operator shall bear the overhead expenses which are required for smooth functioning of the Outlet which include but doesn't limit to Electricity &amp; utility bills, office equipment, stationery &amp; supplies, salary/wages of the employees engaged in the Outlet, rent or/property tax, insurance, administration expenses, or any other expenses for maintenance and up keeping of the Outlet.</p>
+          <p>1.3 Furnishing of Security: No security is required to apply for any type of outlet.</p>
+          <p>1.4 Appointment Criteria: As per the present criteria of KMPL, KMPL appoints KSP, FRANCHISE, DEPOT, SUPER DEPOT. His/her/its continuation as an Outlet operator after such modification/change will be his/her/its deemed acceptance of such modified criteria.</p>
+          <p>1.5 Discount to Outlet: Outlet will be eligible to get a discount (at distributor price i.e. DP) depending upon products on MRP of Product when KSP purchase from Franchise, Franchise purchase from Depot, Depot purchase from Super Depot. Distributor or the State Distributor as the case may be, subject to him/her/its fulfilling its requirement hereunder especially with respect to it complying with GST requirement of submission of taxes and returns in a timely manner.</p>
+          <p>1.6 Maintaining of Stock:</p>
+          <ol>
+            <li>a) KSP must maintain a minimum stock of Rs.10,000/- at all times as per the requirements of KMPL. He must further undertake to ensure that at all time KSP shall make available to KMPL Distributors all KMPL Products. KSP must keep the stock of KMPL products as per the directions given by KMPL from time to time. KSP operator understand and acknowledge that the sales of products are depended on availability of products and servicing of KMPL Distributors who</li>
+          </ol>
+          <p>come to purchase or pick up products from KSP and that KMPL will suffer loss of both business and reputation if KSP fails to fulfil requirement of KMPL Distributors, KMPL thus reserve its right to take strict action, including but not limited to termination on such defaulting KSP.</p>
+          <ol>
+            <li>b) FRANCHISE must maintain a minimum stock of Rs.1,00,000 /- at all times as per the requirements of KMPL. He must further undertake to ensure that at all time FRANCHISE shall make available to KMPL Distributors and KSP all KMPL Products. KSP must keep the stock of KMPL products as per the directions given by KMPL from time to time. FRANCHISE operator understand and acknowledge that the sales of products are depended on availability of products and servicing of KMPL KSP and Distributors who come to purchase or pick up products from FRANCHISE and that KMPL will suffer loss of both business and reputation if FRANCHISE fails to fulfil requirement of KMPL KSP and Distributors, KMPL thus reserve its right to take strict action, including but not limited to termination on such defaulting FRANCHISE.</li>
+          </ol>
+          <ol>
+            <li>c) DEPOT must maintain a minimum stock of Rs.10,00,000 /- at all times as per the requirements of KMPL. He must further undertake to ensure that at all time DEPOT shall make available to KMPL FRANCHISE all KMPL Products. DEPOT must keep the stock of KMPL products as per the directions given by KMPL from time to time. DEPOT operator understand and acknowledge that the sales of products are depended on availability of products and servicing of KMPL FRANCHISE who come to purchase or pick up products from DEPOT and that KMPL will suffer loss of both business and reputation if DEPOT fails to fulfil requirement of KMPL FRANCHISE, KMPL thus reserve its right to take strict action, including but not limited to termination on such defaulting DEPOT.</li>
+          </ol>
+          <ol>
+            <li>d) SUPER DEPOT must maintain a minimum stock of Rs.30,00,000 /- at all times as per the requirements of KMPL. He must further undertake to ensure that at all time SUPER DEPOT shall make available to KMPL DEPOT all KMPL Products. SUPER DEPOT must keep the stock of KMPL products as per the directions given by KMPL from time to time. SUPER DEPOT operator understand and acknowledge that the sales of products are depended on availability of products and servicing of KMPL DEPOT who come to purchase or pick up products from SUPER DEPOT and that KMPL will suffer loss of both business and reputation if SUPER DEPOT fails to fulfil requirement of KMPL DEPOT, KMPL thus reserve its right to take strict action, including but not limited to termination on such defaulting SUPER DEPOT.</li>
+          </ol>
+          <p>1.6.1 Availability of stock at the Outlet should be as per the batch no. and should match the online software of the company.</p>
+          <p>1.6.2 If the Outlet operator fails to maintain the minimum stock limit then the Outlet's name will be removed from the Distributor Locator option given in the official website of the KMPL as this has been pre-programmed in the billing software.</p>
+          <p>1.7 Regular Purchase: KMPL invests considerably in development of sales area and that of Outlet by way of promotions and training, it is thus expected that Outlet should continue the business for at least a year and make regular purchase at least once in a month. If Outlet Operator do not wish to operate the Outlet, it may give a 60 days' notice of termination. If</p>
+          <p>Outlet operator fails to place any order for a period of 3 months Company may also unilaterally terminate the Outlet without any further notice. On an Event of termination of the Outlet due to aforementioned reasons in this clause, the Outlet operator can't return the remaining products/ stock at his/her/its outlet &amp; neither the Company.</p>
+          <p>1.8 Multiple operations: An Outlet operator may open multiple outlets.</p>
+          <ol start="2">
+            <li>DUTY &amp; OBLIGATIONS OF OUTLET OPERATOR</li>
+          </ol>
+          <p>2.1 Outlet Operator shall issue a computerized bill from the Company's software against every sale of the products. It is also a duty of Outlet Operator to provide the GST tax deposit challans along with billing of returns to KMPL to claim any GST reimbursement. Outlets have to manage their book of accounts as per Accounting System prescribed by Indian Govt.</p>
+          <p>2.2 Outlet operator shall not allure/ misguide any Distributor to join any other direct selling company. Outlet operator will not indulge in any unethical practices such as price cutting, dummy billing, holding of bills.</p>
+          <p>2.3 Outlet operator shall refrain from selling the KMPL products on credit, any loss due to it shall be exclusively borne by the Outlet operator and not the KMPL will be responsible for any such loss in any manner. It should also prominently mention that Outlet is not authorized to offer any discount/promotion other than the one offered by the Company.</p>
+          <p>2.4 The Outlet operator can neither store, display or sell any other products nor work with any other direct selling company except KMPL. If found guilty, his/her/its Outlet will be terminated without any prior notice and in the event of termination, the stock will not be taken back &amp; all losses will be borne by the Outlet.</p>
+          <p>2.5 Outlet operator shall keep the Outlet open on six days of the week from 10 am to 8 pm or as permitted by local laws, Outlet operator will take special care to ensure the business of KMPL shall not suffer. Outlet operator and his employee shall maintain highest standard of professionalism and ethics in his dealing with Distributors and employees of KMPL, in</p>
+          <p>particular they shall not stop or misuse sales made by Distributor or misbehave with any of them or indulge in drinking, smoking or chewing tobacco or other intoxicant on the premises of Outlet.</p>
+          <p>2.6 Every month the Outlet operator will conduct meeting to get him/her trained regarding software operations and other business activities like sale promotions etc. and it is mandatory for recently opened Outlets as well as for the Outlets to attend these meetings within the time period of 30 days otherwise their store code will be made inactive by the company from its online Software/website. The Outlets will get advertising &amp; promotional material like banners (that should be displayed at the outside of the office premises) etc. and the certificate of Outlet operation from company&rsquo;s software.</p>
+          <p>2.7 The Company's representative can visit the Outlet operator for stock audit and its inspection at any time without any prior notice to the Outlet. This is the duty of every Outlet operator to co-operate the inspection / audit team/ representative in every way possible.</p>
+          <p>2.8 Outlet operator will not disclose any confidential information or trade secrets to the third party and will not participate in competing business activities of any other Direct Selling Company except KMPL.</p>
+          <ol start="3">
+            <li>GOODS EXCHANGE &amp; RETURN POLICY:</li>
+          </ol>
+          <p>3.1 Quality and manufacturing defect: If there is any quality, manufacturing or packaging defect in any consignment or products in stock then the seller Outlet will exchange only defected products after proper verification, provided Outlet operator informs of such a defect as soon as he receives the Product or become aware of the same.</p>
+          <p>3.2 Return Policy: Items of Food have a specific shelf life and thus Outlets are advised to purchase food products as per their sale capacity, such food products will neither be exchanged nor returned.</p>
+          <p>3.2.1 Those products whose expiry date is less than one year cannot be exchanged and only those products whose expiry date is between one to three years can be exchanged from the seller Outlet within 30 days from the date of purchase, not after that.</p>
+          <p>3.2.2 At no point Outlet can exchange or return the product on an account of expiration of the product.</p>
+          <ol start="4">
+            <li>TRANSPORTATION:-</li>
+          </ol>
+          <p>4.1 If the outlet is situated in the same Tehsil/Taluka as of the outlet, it is obligatory to the Outlet operator to visit the outlet and carry the products by his own means.</p>
+          <p>4.2 If the outlet is not in the same Tehsil/Taluka as of the Outlet and the Outlet places an order for Rs. 20,000 (for KSP), Rs.30,000 (for FRANCHISE), Rs.1,00,000 (for Depot) or more, only then the upline Outlet will bear the transportation expenses of the orders till the transporters office (whichever is nearer to the Outlet). The Outlet Operator has to carry the products (order) from the transporters office by his own means or by himself. However, if he/she/it places any order of less than the value mentioned above then the Outlet shall be responsible to bear all the cost of transportation or has to carry the products by himself.</p>
+          <p>4.3 If the products sent by upline Outlet to downline Outlets, get damaged in transit then the losses will be borne by the seller Outlet and not the KMPL. will be responsible for the losses or compensate the losses.</p>
+          <ol start="5">
+            <li>INTELLECTUAL PROPERTY OF KMPL</li>
+          </ol>
+          <p>5.1 All printed material, labels, logos or slogans are the copyright material of KMPL and other associated companies of KMPL. The Outlet Operator or any other person cannot use whole or part of the printed material without the written permission of the KMPL and/ or associate companies.</p>
+          <p>5.2 Outlet Operator cannot repack the products or change the labels, date, mark or logo of the company. If any Outlet Operator is found guilty of the above malpractices his/her outlet will be liable to be terminated, this will be without prejudice to the right of KMPL to initiate any other legal proceeding seeking injunction, damages etc.</p>
+          <p>5.3 If any Outlet Operator wants to give an advertisement about the business and/ or the product then he/she/ it will have to obtain a prior approval from the company for using KMPL trademarks and logo in the advertisement.</p>
+          <p>5.4 In the advertisement and on social media platform misleading information related to any products and/or business should not be given.</p>
+          <ol start="6">
+            <li>MISCELLANEOUS</li>
+          </ol>
+          <p>6.1 The company will not take responsibility for the losses, in case of theft, 􀀀re or any natural calamity at the Outlet. It is advisable to get the products insured to avoid losses.</p>
+          <p>6.2 Outlet Operators should observe and follow the company's terms and condition with full integrity and commitment. Compliance with the terms and condition is mandatory to avoid any serious repercussions.</p>
+          <p>6.3 If no outlet has been appointed or has been disqualified for the time being in a Taluka/Tehsil of a district then the Outlets situated in the territory of the Tehsil/ District can buy the KMPL products from the adjoining outlets or from the State Distributor at distributor price i.e. DP.</p>
+          <p>6.4 Outlet operator has to ensure that no fake or erroneous billings has been done by the Outlet. If happens, then bills of the centre shall not be cancelled &amp; there business volumes shall not be returned.</p>
+          <p>6.5 Outlet Operator should not share his/her login id and password with any other person. The company will not be responsible if their password is lost or misused. He must use alpha numeric password and change his password frequently.</p>
+          <p>6.6 The company has sole right to change the terms and condition at any time without any prior notice. The company will not be responsible for any losses due to any change thereof. The Outlet Operators should observe and follow the company's terms and condition with full integrity and commitment. Compliance with the terms and condition is mandatory to avoid any serious repercussions.</p>
+          <p>6.7 Super Depot/ Depot/ Franchise/ KSP will purchase products at DP and will sale on DP commission will give against sale. Commission on each product is different as mentioned in approved product list available in Website.</p>
+          <p>6.7.1 Parties having GSTIN should provide GSTIN to KMPL therefore KMPL will credit their wallet with extra 18% of commission as output GST. Parties have to deposit the amount on and before the date of deposit of GST.</p>
+          <p>Orders of KSP, Franchise, Depot &amp; Super Depot:</p>
+          <p>In case the buyer feels that the products are not of good quality or if there is any manufacturing or packaging defect then the buyer can exchange/return the products. The buyer must contact Kalpamrit Marketing Private Limited or its seller from whom, products are purchased within 30 days from the receiving the products. He/She has to provide a valid reason and return the products along with the original invoice or receipt. In such cases, it is the buyer's responsibility to check the expiry date and packaging of the products before processing the refund/exchange.</p>
+          <p>KMPL will provide products having sufficient shelf life. Buyer shall take initiative to sale products. Buyer shall intimate company at least 60 days before the date of expaire of product. Company will refund/exchange saleable goods.</p>
+          <p>Item sold will not be taken back after 60 days from the date of invoice.</p>
+          <p>Kalpamrit has all the rights to reject the plea to refund the amount of products returned, if the buyer is repeatedly returning the products.</p>
+          <p>Remittance will be credited to the buyer&rsquo;s wallet after due confirmation of receipt of the product.</p>
+          <p>In transit damage (return): While returning products it's the buyer&rsquo;s responsibility to transit goods safely. Any in transit damage for returned products will not be entertained.</p>
+          <p>Transportation charge(return): Buyer will bear transportation charge while returning products.</p>
+          <p>Cancellation duration: Online orders may be cancelled till you received the product.</p>
+          <p>Online orders of Kalpamrit Super Depot, Depot, Franchise &amp; KSP:</p>
+          <p>KMPL will ship products within four working days after receipt of online order and payment. If any order is placed along with payment but products are not available with company will leave credit party wallet or refund the amount to the same bank account from where payment was initiated as preferred by party.</p>
+          <p>Delivery time: KMPL arrange logistic partner depending upon serviceability provide by logistic partner. Buyer will get notification of billing through SMS. Standard delivery time is 7 days from the of booking. Buyer will get notification of booking details through SMS. Delivery time may increase if logistic partner is facing any transportation issue. Buyer may notify KMPL through call, email, WhatsApp or grievance form available in company&rsquo;s website and mobile app if order is not delivered within seven days from the date of booking.</p>
+          <p>To avoid order delivery time buyer shall update his/her address before placing order.</p>
+          <p>Delivery charges: KMPL provide free home delivery for orders value more than Rs.10,00,000.00 for Super Depot, Rs.5,00,000.00 for Depot, Rs.30,000.00 for Franchise and Rs.15,000.00 for KSP. Orders valued less than the amount will be charged as per actual or Rs.10.00 per Kg whichever is higher. For faster delivery KMPL may arrange delivery through railway. In such cases party have to collect product from nearest station. Freight from station to parties&rsquo; warehouse will be credited to party&rsquo;s wallet after receiving the copy of freight receipt.</p>
+          <p>Note: Only online orders will be processed.</p>
+          <p>KSP, Franchise, Depot &amp; Super Depot:</p>
+          <p>In case the buyer feels that the products are not of good quality or if there is any manufacturing or packaging defect then the buyer can exchange/return the products and raise request for refund. The buyer must contact Kalpamrit Marketing Private Limited within 90 days from the receiving the products. KMPL will provide products having sufficient shelf life. Buyer shall take initiative to sale products. Buyer shall intimate company at least 60 days before the date of expire of product. Company will refund/exchange saleable goods. Sellers may request for refund for unsold saleable products.</p>
+          <p>Kalpamrit has all the rights to reject the plea to refund the amount of products returned, if the buyer is repeatedly returning the products. Remittance will be credited to the buyer&rsquo;s wallet after due confirmation of receipt of the product. Remittance may be credited to buyer&rsquo;s registered account if preferred by buyer.</p>
+          <p>In transit damage (return): While returning products it's the buyer&rsquo;s responsibility to transit goods safely. Any in transit damage for returned products will not be entertained.</p>
+          <p>Transportation charge(return): Buyer will bear transportation charge while returning products.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">I accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- terms and conditon trigger end -->
+
 <!-- register as party content end here -->
 
 <!-- back to top section start here -->
@@ -268,7 +445,6 @@
     </div>
   </div>
   <!-- footer end here -->
-  
   <!-- copyright start here -->
   <footer class="footer mt-auto py-3 bg-dark">
     <div class="container text-center">
@@ -279,6 +455,5 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="assets/js/backtotop_button.js"></script>
-      <script src="assets/js/search_in_table.js"></script>
     </body>
   </html>
