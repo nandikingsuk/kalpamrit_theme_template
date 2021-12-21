@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='icon' href='./assets/img/favicon.svg' type='image/x-icon' sizes="16x16" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Register as guest user- Kalpamrit Marketing Private Limited</title>
+    <title>Register as guest user - Kalpamrit Marketing Private Limited</title>
   </head>
   <body>
 <!-- header start here -->
@@ -128,18 +128,172 @@
 </nav>
 <!-- breadcrumb end here -->
 
-<!-- register as guest content start here -->
+<!-- register as member content start here -->
 <div class="container d-flex justify-content-center">
     <div class="card m-4 shadow mb-5 bg-body rounded" style="width: 18rem;">
         <div class="card-body">
-          <h6 class="card-title text-center">Register with Kalpamrit</h6>
-          <a href="/register-as-member.html" class="btn btn-primary m-2" style="width: 15rem;">Register as member</a>
-          <a href="/register-as-party.html" class="btn btn-primary m-2" style="width: 15rem;">Register as party</a>
-          <a href="/register-as-guest-user.html" class="btn btn-primary m-2" style="width: 15rem;">Register as guest user</a>
+          <h6 class="card-title text-center">Register as guest user</h6>
+          <div class="input justify-content-center">
+            <select class="form-select m-2" style="width: 15rem;" id="inputGroupSelect04" aria-label="Example">
+              <option selected>*Initial</option>
+              <option value="1">Mr.</option>
+              <option value="2">Mrs.</option>
+              <option value="3">Miss.</option>
+              <option value="3">M/s.</option>
+            </select>
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*Name" aria-label="Name" aria-describedby="basic-addon1">
+            <div class="input-group m-2" style="width: 15rem;">
+                <span class="input-group-text" id="basic-addon1">+91</span>
+                <input type="text" class="form-control" placeholder="*Mobile" aria-label="Mobile" aria-describedby="basic-addon1">
+            </div>
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1">
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*Password" aria-label="Password" aria-describedby="basic-addon1">
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*PIN code" aria-label="PIN code" aria-describedby="basic-addon1">
+            <fieldset disabled>
+                  <input type="text" id="disabledTextInput" class="form-control m-2" style="width: 15rem;" placeholder="*State">
+                  <input type="text" id="disabledTextInput" class="form-control m-2" style="width: 15rem;" placeholder="*District">
+            </fieldset>
+            <input type="text" class="form-control m-2" style="width: 15rem;" placeholder="*Address" aria-label="Address" aria-describedby="basic-addon1">
+            <P class="m-2">* marked fields are mandatory</P>
+            <div class="form-check m-2" style="width: 15rem;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckDefault">
+                    I am authorising Kalpamrit and its associates to send alerts and notifications via email & SMS.
+                </label>
+              </div>
+              <div class="form-check m-2" style="width: 15rem;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    I am Accepting <button type="button" class="btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#membertermsconditions">Terms &amp; conditons</button> for Kalpamrit business.
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <strong class="me-auto">Terms &amp; conditons</strong>
+                            <small>11 mins ago</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Hello, world! This is a toast message.
+                          </div>
+                        </div>
+                      </div>
+                </label>
+              </div>
+          </div>
+          <a href="#" class="btn btn-primary m-2" style="width: 15rem;">Register as guest user</a>
         </div>
     </div>
 </div>
-<!-- register as guest content end here -->
+  <!-- terms and conditon trigger start -->
+  <div class="modal fade" id="membertermsconditions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Terms &amp; Conditions</h5>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <!-- <div class="modal-dialog modal-dialog-scrollable">
+          ...
+        </div> -->
+        <div class="modal-body">
+          <p>
+            1.1. Kalpamrit Marketing Private Limited (&ldquo;KMPL&rdquo; or &ldquo;Company&rdquo;) is a company incorporated under the Companies Act, 1956 and has its Registered Of_ice in 50, Mansi Enclave Jagjeetpur, Kankhal, Haridwar - 249408, Uttarakhand. The Company is inter-alia into the business of Direct Selling of various products such as Ayurvedic Medicines, Herbal, Health Care, Home Care, Beauty Care, Personal Care Products and products.
+          </p>
+          <p>
+            1.2. Copyright Act:
+          </p>
+          <p>
+            All printed materials, labels, logos or slogans are the Copyright material of KMPL and associate companies. No buyer or any other person has the right to use whole or part of the printed material without the written permission of the KMPL and/or associate companies.
+          </p>
+          <p>
+            1.3. Related to Advertisement and Social Media:
+          </p>
+          <p>
+            If any buyer wants to give an advertisement about the business and/or the product then he/she will have to take/obtain a written permission from the Company for the use of KMPL Trade Marks and Logos in the advertisement.
+          </p>
+          <p>
+            1.3.1 Buyer cannot sell company&rsquo;s products on social media or any other online shopping portal.
+          </p>
+          <p>
+            In the advertisement and in any social media platform misleading information or allurement practices of any form on the
+          </p>
+          <p>
+            products and/or business should is strictly prohibited.
+          </p>
+          <p>
+            1.3.2 If any Buyer is found guilty of such an act, the buyer will be personally responsible for the same and the decision of the Company&rsquo;s management will be final.
+          </p>
+          <p>
+            1.4 Buyer neither can incur any liabilities or debt nor enter into any contract in the name or on behalf of the Company. Buyer will not open Bank account in the name of company i.e. Kalpamrit Marketing Private Limited, KMPL.
+          </p>
+          <p>
+            1.5. Buyer may purchase products from Company through online order on MRP.
+          </p>
+          <p>
+            1.6 Buyer may contact Company&rsquo;s customer care for any product or order related information.
+          </p>
+          <p>
+            <strong>
+              CANCEL AND RETURN POLICY
+            </strong>
+          </p>
+          <p>
+            Online orders of buyer&rsquo;s:
+          </p>
+          <p>
+            In case the buyer feels that the products are not of good quality or if there is any manufacturing or packaging defect then the buyer can exchange/return the products. The buyer must contact Kalpamrit Marketing Private Limited within 30 days from the date of raising invoice. He has to provide a valid reason and return the products along with the original invoice or receipt. In such cases, it is the buyer's responsibility to check the expiry date and packaging of the products before processing the refund/exchange.
+          </p>
+          <p>
+            Kalpamrit has all the rights to reject the plea to refund the amount of products returned, if the buyer is repeatedly returning the products. Remittance will be credited to the buyer&rsquo;s account from where the payment was received or distributor&rsquo;s wallet as preferred by distributor. After confirmation of refund payment gateway may take four to five working days to credit the
+          </p>
+          <p>
+            amount to the buyer&rsquo;s bank.
+          </p>
+          <p>
+            <strong>
+              Online orders of buyer&rsquo;s:
+            </strong>
+          </p>
+          <p>
+            KMPL will ship products within two working days after receipt of online order and payment. If any order is placed along with payment but products are not available with company will credit distributor&rsquo;s wallet or refund the amount to the same bank account from where payment was initiated.
+          </p>
+          <p>
+            Delivery time: KMPL arrange logistic partner depending upon serviceability provide by logistic partner. Buyer will get notification of billing through SMS. Standard delivery time is 7 days from the of booking. Buyer will get notification of booking details through SMS. Delivery time may increase if logistic partner is facing any transportation issue. Buyer may notify KMPL through call, email, WhatsApp or grievance form available in company&rsquo;s website and mobile app if order is not delivered within seven days from the date of booking.
+          </p>
+          <p>
+            To avoid order delivery time buyer shall update his/her address before placing order.
+          </p>
+          <p>
+            Delivery charges: KMPL provide free home delivery for orders value more than Rs.1100.00. Orders valued less than the amount will be charged with Rs.34.00 per Kg. Buyer shall not give any charged to logistic partner.
+          </p>
+          <p>
+            Payment gateway charges: KMPL will bear charges levied by payment gateway charges.
+          </p>
+          <p>
+            <strong>
+              Buyer&rsquo;s:
+            </strong>
+          </p>
+          <p>
+            Refund will be processed if damage/loss is mentioned on transporter&rsquo;s copy or products having manufacturing defect or not satisfied with the quality of the product.
+          </p>
+          <p>
+            Kalpamrit has all the rights to reject the plea to refund the amount of products returned, if the buyer is repeatedly returning the products.
+          </p>
+          <p>
+            Remittance will be credited to the buyer&rsquo;s account from where the payment was received or distributor&rsquo;s wallet as preferred by buyer. After confirmation of refund, payment gateway may take four to five working days to credit the amount to the buyer&rsquo;s bank.
+          </p>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">I accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- terms and conditon trigger end -->
+
+<!-- register as member content end here -->
 
 <!-- back to top section start here -->
 <footer class="footer mt-auto py-3 bg-secondary">
@@ -268,7 +422,6 @@
     </div>
   </div>
   <!-- footer end here -->
-  
   <!-- copyright start here -->
   <footer class="footer mt-auto py-3 bg-dark">
     <div class="container text-center">
@@ -279,6 +432,5 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="assets/js/backtotop_button.js"></script>
-      <script src="assets/js/search_in_table.js"></script>
     </body>
   </html>
